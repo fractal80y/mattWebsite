@@ -3,9 +3,9 @@
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-param = request.headers['test']
 
-@app.route('/')
+
+@app.route('/', methods=['GET'])
 def hello():
-    return render_template("menu/front", temp1=param)
-
+    temp = request.args
+    return render_template("menu/front", val=temp)

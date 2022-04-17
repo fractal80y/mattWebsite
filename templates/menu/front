@@ -10,7 +10,7 @@
 
 <body>
   <h1 style="color: blue">Index</h1>
-  <p>{{temp1}}</p>
+  <p>{{val.get('test')}}</p>
 </body>
 
 </html>
